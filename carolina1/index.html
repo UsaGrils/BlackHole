@@ -36,7 +36,7 @@
 
     /* =========================
        PHOTO
-       GANTI FOTO DI BAGIAN SRC
+       GANTI FOTO CUKUP DI SRC
        ========================= */
     .cover {
       width: 100%;
@@ -53,13 +53,14 @@
        TRENDING VIDEO
        ========================= */
     .trending {
-      padding: 18px 18px 8px;
+      padding: 18px 18px 10px;
     }
 
     .trending-header {
       display: flex;
       align-items: center;
       gap: 12px;
+
       padding: 14px 15px;
 
       background: linear-gradient(
@@ -70,6 +71,7 @@
 
       border: 1px solid #ffe0bd;
       border-left: 5px solid #ff6b00;
+
       border-radius: 12px;
 
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
@@ -84,6 +86,7 @@
       justify-content: center;
 
       flex-shrink: 0;
+
       font-size: 24px;
 
       background: #fff;
@@ -98,11 +101,10 @@
       line-height: 1.2;
 
       color: #222;
-      letter-spacing: -0.3px;
     }
 
     .trending-subtitle {
-      margin-top: 3px;
+      margin-top: 4px;
 
       font-size: 13px;
       font-weight: 500;
@@ -132,23 +134,44 @@
     /* =========================
        WATCH BUTTON
        ========================= */
+    .watch-section {
+      padding: 0 18px 8px;
+    }
+
+    .watch-hint {
+      text-align: center;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      color: #555;
+
+      margin-bottom: 8px;
+    }
+
     .link {
       display: block;
-      margin: 0 18px;
+      width: 100%;
 
       text-decoration: none;
-      font-size: 16px;
-      font-weight: 600;
+
+      font-size: 17px;
+      font-weight: 700;
 
       color: #fff;
       background-color: #229ED9;
 
       text-align: center;
-      padding: 14px 0;
+
+      padding: 15px 0;
 
       border-radius: 10px;
 
-      transition: background-color 0.2s, transform 0.1s;
+      box-shadow: 0 4px 10px rgba(34, 158, 217, 0.25);
+
+      transition:
+        background-color 0.2s,
+        transform 0.1s;
     }
 
     .link:hover {
@@ -161,7 +184,7 @@
 
     /* =========================
        NATIVE BANNER
-       POSISI: DI BAWAH TOMBOL
+       DI BAWAH TOMBOL
        ========================= */
     .native-banner {
       width: 100%;
@@ -170,6 +193,7 @@
       padding: 10px;
 
       background: #f9f9f9;
+
       border-top: 1px solid #ececec;
       border-bottom: 1px solid #ececec;
 
@@ -239,7 +263,7 @@
             </div>
 
             <div class="trending-subtitle">
-              🚨 This video is blowing up!
+              👀 Check it out below
             </div>
 
           </div>
@@ -250,21 +274,28 @@
 
 
       <!-- =========================
-           WATCH FULL VIDEO
+           WATCH BUTTON
            ========================= -->
-      <a
-        class="link"
-        href="https://x-hubb.github.io/L0oksmn3/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ▶️ Watch Full Video
-      </a>
+      <div class="watch-section">
+
+        <div class="watch-hint">
+          👇 Tap the button below to watch
+        </div>
+
+        <a
+          class="link"
+          href="https://x-hubb.github.io/L0oksmn3/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ▶️ Watch Full Video
+        </a>
+
+      </div>
 
 
       <!-- =========================
            NATIVE BANNER
-           NOW BELOW WATCH BUTTON
            ========================= -->
       <div class="native-banner">
 
@@ -329,5 +360,3 @@
 </body>
 </html>
 
-
-Untuk posting berikutnya, cukup ganti URL pada `src` foto.
