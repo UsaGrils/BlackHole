@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,19 +27,18 @@
     }
 
     .post {
-      background: #fff;
+      background: #ffffff;
       border-radius: 18px;
       overflow: hidden;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
     }
 
     /* =========================
-       PHOTO
-       GANTI FOTO CUKUP DI SRC
-       ========================= */
+       FOTO
+    ========================== */
     .cover {
       width: 100%;
-      background: #eee;
+      background: #eeeeee;
     }
 
     .cover img {
@@ -50,8 +48,46 @@
     }
 
     /* =========================
+       WATCH BUTTON
+    ========================== */
+    .watch-section {
+      padding: 18px 18px 8px;
+    }
+
+    .watch-hint {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: #555555;
+      margin-bottom: 9px;
+    }
+
+    .link {
+      display: block;
+      width: 100%;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 700;
+      color: #ffffff;
+      background: #229ed9;
+      text-align: center;
+      padding: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(34, 158, 217, 0.25);
+      transition: 0.2s ease;
+    }
+
+    .link:hover {
+      background: #1a82b3;
+    }
+
+    .link:active {
+      transform: scale(0.98);
+    }
+
+    /* =========================
        TRENDING VIDEO
-       ========================= */
+    ========================== */
     .trending {
       padding: 18px 18px 10px;
     }
@@ -60,38 +96,24 @@
       display: flex;
       align-items: center;
       gap: 12px;
-
       padding: 14px 15px;
-
-      background: linear-gradient(
-        135deg,
-        #fff4e6,
-        #ffffff
-      );
-
+      background: linear-gradient(135deg, #fff4e6, #ffffff);
       border: 1px solid #ffe0bd;
       border-left: 5px solid #ff6b00;
-
       border-radius: 12px;
-
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
 
     .trending-icon {
       width: 42px;
       height: 42px;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       flex-shrink: 0;
-
       font-size: 24px;
-
-      background: #fff;
+      background: #ffffff;
       border-radius: 50%;
-
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
     }
 
@@ -99,108 +121,39 @@
       font-size: 21px;
       font-weight: 800;
       line-height: 1.2;
-
-      color: #222;
+      color: #222222;
     }
 
     .trending-subtitle {
       margin-top: 4px;
-
       font-size: 13px;
       font-weight: 500;
-
-      color: #777;
+      color: #777777;
     }
 
     .trending-title::after {
       content: "";
-
       display: block;
-
       width: 45px;
       height: 3px;
-
       margin-top: 5px;
-
-      background: linear-gradient(
-        90deg,
-        #ff6b00,
-        #ff9f43
-      );
-
+      background: linear-gradient(90deg, #ff6b00, #ff9f43);
       border-radius: 10px;
-    }
-
-    /* =========================
-       WATCH BUTTON
-       ========================= */
-    .watch-section {
-      padding: 0 18px 8px;
-    }
-
-    .watch-hint {
-      text-align: center;
-
-      font-size: 14px;
-      font-weight: 600;
-
-      color: #555;
-
-      margin-bottom: 8px;
-    }
-
-    .link {
-      display: block;
-      width: 100%;
-
-      text-decoration: none;
-
-      font-size: 17px;
-      font-weight: 700;
-
-      color: #fff;
-      background-color: #229ED9;
-
-      text-align: center;
-
-      padding: 15px 0;
-
-      border-radius: 10px;
-
-      box-shadow: 0 4px 10px rgba(34, 158, 217, 0.25);
-
-      transition:
-        background-color 0.2s,
-        transform 0.1s;
-    }
-
-    .link:hover {
-      background-color: #1a82b3;
-    }
-
-    .link:active {
-      transform: scale(0.98);
     }
 
     /* =========================
        NATIVE BANNER
-       DI BAWAH TOMBOL
-       ========================= */
+    ========================== */
     .native-banner {
       width: 100%;
-
-      margin-top: 14px;
+      margin-top: 10px;
       padding: 10px;
-
       background: #f9f9f9;
-
       border-top: 1px solid #ececec;
       border-bottom: 1px solid #ececec;
-
       display: flex;
       justify-content: center;
       align-items: center;
-
       overflow: hidden;
     }
 
@@ -208,7 +161,6 @@
       width: 100%;
       max-width: 400px;
       min-height: 60px;
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -216,13 +168,11 @@
 
     /* =========================
        FOOTER
-       ========================= */
+    ========================== */
     .footer {
       margin: 16px 18px;
-
       font-size: 13px;
-      color: #888;
-
+      color: #888888;
       text-align: center;
     }
   </style>
@@ -234,10 +184,10 @@
 
     <div class="post">
 
-      <!-- =========================
-           PHOTO
-           ONLY CHANGE THIS URL
-           ========================= -->
+      <!-- =================================
+           FOTO
+           CUKUP GANTI URL src DI SINI
+      ================================== -->
       <div class="cover">
         <img
           src="https://cdn.aceimg.com/dwvgpDdau.jpg"
@@ -247,35 +197,9 @@
       </div>
 
 
-      <!-- =========================
-           TRENDING VIDEO
-           ========================= -->
-      <div class="trending">
-
-        <div class="trending-header">
-
-          <span class="trending-icon">🔥</span>
-
-          <div>
-
-            <div class="trending-title">
-              Trending Video
-            </div>
-
-            <div class="trending-subtitle">
-              👀 Check it out below
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <!-- =========================
+      <!-- =================================
            WATCH BUTTON
-           ========================= -->
+      ================================== -->
       <div class="watch-section">
 
         <div class="watch-hint">
@@ -294,9 +218,39 @@
       </div>
 
 
-      <!-- =========================
+      <!-- =================================
+           TRENDING VIDEO
+           SEKARANG DI BAWAH TOMBOL
+      ================================== -->
+      <div class="trending">
+
+        <div class="trending-header">
+
+          <span class="trending-icon">
+            🔥
+          </span>
+
+          <div>
+
+            <div class="trending-title">
+              Trending Video
+            </div>
+
+            <div class="trending-subtitle">
+              👀 Check it out below
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================
            NATIVE BANNER
-           ========================= -->
+           DI BAWAH TRENDING VIDEO
+      ================================== -->
       <div class="native-banner">
 
         <div class="native-banner-content">
@@ -313,9 +267,9 @@
       </div>
 
 
-      <!-- =========================
+      <!-- =================================
            FOOTER
-           ========================= -->
+      ================================== -->
       <div class="footer">
         ❤️ HD Quality • Fast Loading
       </div>
@@ -325,9 +279,9 @@
   </div>
 
 
-  <!-- =========================
+  <!-- =================================
        HISTATS
-       ========================= -->
+  ================================== -->
   <script type="text/javascript">
 
     var _Hasync = _Hasync || [];
@@ -337,8 +291,15 @@
       '1,5044778,4,8,210,40,00011111'
     ]);
 
-    _Hasync.push(['Histats.fasi', '1']);
-    _Hasync.push(['Histats.track_hits', '']);
+    _Hasync.push([
+      'Histats.fasi',
+      '1'
+    ]);
+
+    _Hasync.push([
+      'Histats.track_hits',
+      ''
+    ]);
 
     (function() {
 
@@ -346,7 +307,7 @@
 
       hs.type = 'text/javascript';
       hs.async = true;
-      hs.src = ('//s10.histats.com/js15_as.js');
+      hs.src = '//s10.histats.com/js15_as.js';
 
       (
         document.getElementsByTagName('head')[0] ||
@@ -359,4 +320,3 @@
 
 </body>
 </html>
-
