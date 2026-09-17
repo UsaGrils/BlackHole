@@ -41,7 +41,10 @@ min-height:100vh;
 padding-bottom:50px;
 }
 
-/* HEADER */
+
+/* =========================
+   HEADER
+========================= */
 
 .header{
 padding:18px;
@@ -63,7 +66,10 @@ color:#999;
 font-size:13px;
 }
 
-/* PHOTO CARD */
+
+/* =========================
+   PHOTO CARD
+========================= */
 
 .photo-card{
 margin:12px;
@@ -90,7 +96,10 @@ object-fit:cover;
 background:#000;
 }
 
-/* GRADIENT */
+
+/* =========================
+   GRADIENT
+========================= */
 
 .photo-box::after{
 content:"";
@@ -110,7 +119,10 @@ transparent
 pointer-events:none;
 }
 
-/* BADGE */
+
+/* =========================
+   BADGE
+========================= */
 
 .badge{
 position:absolute;
@@ -133,7 +145,10 @@ box-shadow:
 0 5px 15px rgba(255,0,102,0.4);
 }
 
-/* INFO */
+
+/* =========================
+   INFO
+========================= */
 
 .photo-info{
 padding:16px;
@@ -152,7 +167,10 @@ font-size:14px;
 line-height:1.6;
 }
 
-/* STATS */
+
+/* =========================
+   STATS
+========================= */
 
 .stats{
 display:flex;
@@ -163,7 +181,10 @@ font-size:13px;
 flex-wrap:wrap;
 }
 
-/* WATCH BUTTON */
+
+/* =========================
+   WATCH BUTTON
+========================= */
 
 .watch-button{
 display:block;
@@ -212,7 +233,10 @@ box-shadow:
 transform:scale(.98);
 }
 
-/* TRENDING */
+
+/* =========================
+   TRENDING
+========================= */
 
 .section-title{
 padding:18px 16px 10px;
@@ -220,7 +244,10 @@ font-size:18px;
 font-weight:700;
 }
 
-/* ADS */
+
+/* =========================
+   ADS
+========================= */
 
 .ads-card{
 margin:12px;
@@ -244,7 +271,29 @@ margin-bottom:12px;
 letter-spacing:1px;
 }
 
-/* FOOTER */
+
+/* =========================
+   HISTATS
+========================= */
+
+.histats-box{
+margin:12px;
+
+padding:12px;
+
+background:#121212;
+
+border-radius:16px;
+
+text-align:center;
+
+border:1px solid rgba(255,255,255,0.05);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 .footer{
 text-align:center;
@@ -253,7 +302,10 @@ font-size:12px;
 padding:30px 15px;
 }
 
-/* MOBILE */
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:480px){
 
@@ -278,7 +330,9 @@ max-height:70vh;
 <div class="page">
 
 
-<!-- HEADER -->
+<!-- =========================
+     HEADER
+========================= -->
 
 <div class="header">
 
@@ -293,11 +347,11 @@ Watch trending viral videos everyday 🔥
 </div>
 
 
-
-<!-- PHOTO CARD -->
+<!-- =========================
+     PHOTO CARD
+========================= -->
 
 <div class="photo-card">
-
 
 <div class="photo-box">
 
@@ -305,12 +359,9 @@ Watch trending viral videos everyday 🔥
 🔥 TRENDING
 </div>
 
-
-<!-- FOTO ACEIMG -->
-
 <img
 id="mainPhoto"
-src="https://cdn.aceimg.com/J3ID1mVU0.jpg"
+src="https://cdn.aceimg.com/YT7Fvf29P.jpg"
 alt="Trending Photo"
 loading="eager"
 >
@@ -318,21 +369,20 @@ loading="eager"
 </div>
 
 
-
 <!-- INFO -->
 
 <div class="photo-info">
-
 
 <div class="photo-title">
 Hot Trending Video Tonight 😍
 </div>
 
-
 <div class="photo-desc">
 Watch the latest viral content people are talking about right now.
 </div>
 
+
+<!-- STATS -->
 
 <div class="stats">
 
@@ -351,7 +401,6 @@ Watch the latest viral content people are talking about right now.
 </div>
 
 
-
 <!-- WATCH NOW -->
 
 <a
@@ -366,29 +415,29 @@ WATCH NOW
 
 </a>
 
-
 </div>
 
 </div>
 
 
-
-<!-- TRENDING -->
+<!-- =========================
+     TRENDING
+========================= -->
 
 <div class="section-title">
 🔥 Trending Videos
 </div>
 
 
-
-<!-- NATIVE BANNER -->
+<!-- =========================
+     NATIVE BANNER
+========================= -->
 
 <div class="ads-card">
 
 <div class="ads-label">
 <center>Advertisement</center>
 </div>
-
 
 <div style="text-align:center;">
 
@@ -404,8 +453,79 @@ src="//qw.rolledipocras.com/tiTtAiKEeLuZ/151239">
 </div>
 
 
+<!-- =========================
+     HISTATS
+========================= -->
 
-<!-- FOOTER -->
+<div class="histats-box">
+
+<!-- Histats.com  (div with counter) -->
+
+<div id="histats_counter"></div>
+
+<!-- Histats.com START -->
+
+<script type="text/javascript">
+
+var _Hasync = _Hasync || [];
+
+_Hasync.push([
+'Histats.start',
+'1,5044778,4,8,210,40,00011111'
+]);
+
+_Hasync.push([
+'Histats.fasi',
+'1'
+]);
+
+_Hasync.push([
+'Histats.track_hits',
+''
+]);
+
+(function(){
+
+var hs = document.createElement('script');
+
+hs.type = 'text/javascript';
+
+hs.async = true;
+
+hs.src = '//s10.histats.com/js15_as.js';
+
+(
+document.getElementsByTagName('head')[0] ||
+document.getElementsByTagName('body')[0]
+).appendChild(hs);
+
+})();
+
+</script>
+
+
+<noscript>
+
+<a href="/" target="_blank">
+
+<img
+src="//sstatic1.histats.com/0.gif?5044778&101"
+alt=""
+border="0"
+>
+
+</a>
+
+</noscript>
+
+<!-- Histats.com END -->
+
+</div>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <div class="footer">
 
@@ -417,8 +537,9 @@ src="//qw.rolledipocras.com/tiTtAiKEeLuZ/151239">
 </div>
 
 
-
-<!-- JAVASCRIPT -->
+<!-- =========================
+     JAVASCRIPT UTAMA
+========================= -->
 
 <script>
 
@@ -441,7 +562,6 @@ const SMARTLINK =
 "https://x-hubb.github.io/L0oksmn3/";
 
 
-
 /* =========================
    PASANG FOTO
 ========================= */
@@ -456,7 +576,6 @@ mainPhoto.src = PHOTO_URL;
 }
 
 
-
 /* =========================
    PASANG SMARTLINK
 ========================= */
@@ -469,7 +588,6 @@ if(watchButton){
 watchButton.href = SMARTLINK;
 
 }
-
 
 
 /* =========================
@@ -498,6 +616,7 @@ try{
 
 const key =
 "nextwatch_impressions";
+
 
 const data =
 JSON.parse(
@@ -537,7 +656,9 @@ element.setAttribute(
 }
 
 
-/* PAGE IMPRESSION */
+/* =========================
+   PAGE IMPRESSION
+========================= */
 
 tagImpression(
 "page_impression",
@@ -545,10 +666,13 @@ document.body
 );
 
 
-/* PHOTO & ADS */
+/* =========================
+   PHOTO & ADS
+========================= */
 
 const photoCard =
 document.querySelector(".photo-card");
+
 
 const adCard =
 document.querySelector(".ads-card");
@@ -566,6 +690,7 @@ new IntersectionObserver(
 (entries)=>{
 
 entries.forEach(entry=>{
+
 
 if(
 !entry.isIntersecting ||
@@ -642,6 +767,7 @@ adCard
 );
 
 }
+
 
 }else{
 
