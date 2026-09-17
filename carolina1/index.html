@@ -36,7 +36,7 @@
 
     /* =========================
        PHOTO
-       GANTI URL FOTO DI SINI
+       GANTI FOTO DI BAGIAN SRC
        ========================= */
     .cover {
       width: 100%;
@@ -47,29 +47,6 @@
       width: 100%;
       height: auto;
       display: block;
-    }
-
-    /* =========================
-       NATIVE BANNER
-       ========================= */
-    .native-banner {
-      width: 100%;
-      background: #f9f9f9;
-      padding: 10px;
-      border-bottom: 1px solid #ececec;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .native-banner-content {
-      width: 100%;
-      max-width: 400px;
-      min-height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
 
     /* =========================
@@ -84,27 +61,34 @@
       align-items: center;
       gap: 12px;
       padding: 14px 15px;
+
       background: linear-gradient(
         135deg,
         #fff4e6,
         #ffffff
       );
+
       border: 1px solid #ffe0bd;
       border-left: 5px solid #ff6b00;
       border-radius: 12px;
+
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
 
     .trending-icon {
       width: 42px;
       height: 42px;
+
       display: flex;
       align-items: center;
       justify-content: center;
+
       flex-shrink: 0;
       font-size: 24px;
+
       background: #fff;
       border-radius: 50%;
+
       box-shadow: 0 3px 8px rgba(0, 0, 0, 0.10);
     }
 
@@ -112,28 +96,36 @@
       font-size: 21px;
       font-weight: 800;
       line-height: 1.2;
+
       color: #222;
       letter-spacing: -0.3px;
     }
 
     .trending-subtitle {
       margin-top: 3px;
+
       font-size: 13px;
       font-weight: 500;
+
       color: #777;
     }
 
     .trending-title::after {
       content: "";
+
       display: block;
+
       width: 45px;
       height: 3px;
+
       margin-top: 5px;
+
       background: linear-gradient(
         90deg,
         #ff6b00,
         #ff9f43
       );
+
       border-radius: 10px;
     }
 
@@ -143,14 +135,19 @@
     .link {
       display: block;
       margin: 0 18px;
+
       text-decoration: none;
       font-size: 16px;
       font-weight: 600;
+
       color: #fff;
       background-color: #229ED9;
+
       text-align: center;
       padding: 14px 0;
+
       border-radius: 10px;
+
       transition: background-color 0.2s, transform 0.1s;
     }
 
@@ -163,12 +160,45 @@
     }
 
     /* =========================
+       NATIVE BANNER
+       POSISI: DI BAWAH TOMBOL
+       ========================= */
+    .native-banner {
+      width: 100%;
+
+      margin-top: 14px;
+      padding: 10px;
+
+      background: #f9f9f9;
+      border-top: 1px solid #ececec;
+      border-bottom: 1px solid #ececec;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      overflow: hidden;
+    }
+
+    .native-banner-content {
+      width: 100%;
+      max-width: 400px;
+      min-height: 60px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* =========================
        FOOTER
        ========================= */
     .footer {
       margin: 16px 18px;
+
       font-size: 13px;
       color: #888;
+
       text-align: center;
     }
   </style>
@@ -190,27 +220,6 @@
           alt="Trending Video"
           loading="lazy"
         >
-      </div>
-
-
-      <!-- =========================
-           NATIVE BANNER
-           ========================= -->
-      <div class="native-banner">
-
-        <div class="native-banner-content">
-
-          <div>
-            <script
-              data-cfasync="false"
-              async
-              type="text/javascript"
-              src="//qw.rolledipocras.com/tiTtAiKEeLuZ/151239">
-            </script>
-          </div>
-
-        </div>
-
       </div>
 
 
@@ -251,6 +260,26 @@
       >
         ▶️ Watch Full Video
       </a>
+
+
+      <!-- =========================
+           NATIVE BANNER
+           NOW BELOW WATCH BUTTON
+           ========================= -->
+      <div class="native-banner">
+
+        <div class="native-banner-content">
+
+          <script
+            data-cfasync="false"
+            async
+            type="text/javascript"
+            src="//qw.rolledipocras.com/tiTtAiKEeLuZ/151239">
+          </script>
+
+        </div>
+
+      </div>
 
 
       <!-- =========================
@@ -300,3 +329,5 @@
 </body>
 </html>
 
+
+Untuk posting berikutnya, cukup ganti URL pada `src` foto.
